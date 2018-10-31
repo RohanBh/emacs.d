@@ -30,7 +30,7 @@
           ("gnu"     . 5)
           ("melpa"        . 0)))
 )
-(package-initialize)
+(when (version< emacs-version "27.0") (package-initialize))
 
 ;; Disable menu-bar
 (menu-bar-mode -1)
