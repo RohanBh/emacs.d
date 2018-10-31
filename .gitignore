@@ -1,0 +1,4 @@
+# Ignore auto-save and backup directories
+auto-save-list/
+backups
+
