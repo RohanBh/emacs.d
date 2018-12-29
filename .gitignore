@@ -1,4 +1,3 @@
-# Ignore auto-save and backup directories
-auto-save-list/
-backups
-
+# Ignore everything except init.el
+*
+!init.el

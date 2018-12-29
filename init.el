@@ -48,6 +48,9 @@
 ;; Enable which-key-mode by default
 (which-key-mode 1)
 
+;; Enable flycheck: https://code.litomisky.com/2014/10/24/getting-with-pylint-in-emacs/
+(add-hook 'after-init-hook #'global-flycheck-mode)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -121,7 +124,7 @@
     ("#CC9393" "#DFAF8F" "#F0DFAF" "#7F9F7F" "#BFEBBF" "#93E0E3" "#94BFF3" "#DC8CC3")))
  '(package-selected-packages
    (quote
-    (which-key undo-tree typescript-mode doom-themes solarized-theme zenburn-theme material-theme gotham-theme spacemacs-theme elm-mode vmd-mode flymd markdown-mode)))
+    (flycheck which-key undo-tree typescript-mode doom-themes solarized-theme zenburn-theme material-theme gotham-theme spacemacs-theme elm-mode vmd-mode flymd markdown-mode)))
  '(pdf-view-midnight-colors (quote ("#DCDCCC" . "#383838")))
  '(pos-tip-background-color "#eee8d5")
  '(pos-tip-foreground-color "#586e75")
